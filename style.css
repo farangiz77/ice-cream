@@ -6,7 +6,7 @@
 
 .container{
     max-width: 1100px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -21,11 +21,16 @@
     display: flex;
     gap: 40px;
 
+    @media (max-width: 750px) {
+        display: none;
+    }
+
     a{
         text-decoration: none;
         color: #150101;
         font-weight: 700;
         transition: .5s;
+        white-space: nowrap;
         &:hover{
             color: #D23166;
         }
@@ -40,6 +45,7 @@
     font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .header, .section1{
@@ -51,7 +57,12 @@
 .wrap1{
     display: flex;
     align-items: center;
-
+    
+    @media (max-width: 1000px) {
+flex-direction: column;
+padding-top: 50px;
+                
+    }
 
 }
 
@@ -59,7 +70,9 @@
     h1{
         font-size: 45px;
         font-weight: 700;
-
+@media (max-width: 400px) {
+    font-size: 42px;
+}
         span{
             color:#D23166;
         }
@@ -70,4 +83,84 @@
         margin: 35px 0;
         color: #0F0101;
     }
+
+    @media (max-width: 450px) {
+        text-align: center;
+    }
+}
+
+.img1, .img3{
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.card2{
+    border: 1px solid lightgray;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 28px 25px;
+    border-radius: 7px;
+
+    h3{
+        padding: 20px 0;
+    }
+}
+
+.cards2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+flex-wrap: wrap;
+
+@media (max-width: 600px) {
+    align-items: center;
+    justify-content: center;
+}
+}
+
+.section2{
+    padding: 100px 0;
+}
+
+
+.section3{
+    background: #F8EDF0;
+    padding: 50px 0;
+
+}
+
+
+.wrap3{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+}
+
+.box3{
+    max-width: 440px;
+    width: 100%;
+
+h2{
+font-size: 44px;
+}
+
+    p{
+        color:#150101;
+        padding: 20px 0;
+        opacity: 0.5;
+    }
+
+    @media (max-width: 450px) {
+        text-align: center;
+    }
+}
+
+.img3{
+
 }

@@ -161,6 +161,26 @@ font-size: 44px;
     }
 }
 
-.img3{
+.section4{
 
+    padding: 140px 0;
+    h1{
+        text-align: center;
+        margin: 64px 0 60px;
+        font-size: 45px;
+    }
+}
+
+
+.menu4{
+    display: flex;
+    justify-content: space-between;
+    gap: 39px;
+
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #000000;
+      
+    }
 }

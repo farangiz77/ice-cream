@@ -178,10 +178,9 @@ font-size: 44px;
     display: flex;
     justify-content: space-between;
     gap: 39px;
-    @media (max-width: 100px) {
-            align-items: center;
-            justify-content: center;
-            align-items: center;
+    @media (max-width: 1178px) {
+          flex-wrap: wrap ;
+         justify-content: center;
         }
 
 
